@@ -10,6 +10,7 @@ function Wallet({ address, setAddress, balance, setBalance }) {
   async function onChange(e) {
     const address = e.target.value;
     setAddress(address);
+    // console.log("Address changed:", address);
     if (address) {
       try {
         const privateKeyBytes = hexToBytes(address);
